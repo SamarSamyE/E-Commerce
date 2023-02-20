@@ -1,0 +1,55 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 1% 1%;
+    
+}
+.leftside{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    cursor: pointer; 
+}
+.rightside{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    cursor: pointer; 
+   
+}
+header{
+    margin-right:100px
+}
+.navcontent:hover{
+ background-color: rgb(245, 198, 70);
+ padding:0px 5px;
+}
+#filterList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+#filterList li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+    color:rgb(167, 165, 165)
+}
+#filterList li a:hover{
+    color: rgb(245, 198, 70);
+}
+.bottomNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:2%
+}
