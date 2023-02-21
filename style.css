@@ -62,3 +62,6 @@ header{
     justify-content: space-between;
     margin:2%
 }
+footer ul li a:hover{
+    color: rgb(245, 198, 70)!important;
+}
