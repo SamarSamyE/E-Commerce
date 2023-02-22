@@ -63,6 +63,9 @@ checkRequired([ email, password]);
 checkLength(password, 6, 25);
 checkEmail(email);
 if((requiredErr && lenghtErr && emailErr)===true){
-    window.location.href="../index.html"
- }
+    window.location.href="../index.html";
+    
+  }
+  
 });
+document.getElementsByClassName("navcontent").style.display="none";
