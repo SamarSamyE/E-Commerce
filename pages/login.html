@@ -5,154 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
-    <title>Form Validator</title>
-    <style>
-      :root {
-  --success-color: #23cc71;
-  --error-color: #e74c3c;
-}
-      body{
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-      }
-      .container{
-        width: 450px;
-    margin-top: 50px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      }
-      .form{
-        line-height: 2;
-    padding: 22px;
-    color: white;
-   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 430px;
-    height: 450px;
-    padding: 50px 40px;
-    background: rgb(178 178 178 / 10%);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      }
-      
-.form-control{
-  position: relative;
-  padding: 10px;
- 
-
-}
-
-.form-control input{
-  
-  font-weight: bold;
-    height: 50px;
-    font-size: 17px;
-    font-style: italic;
-    width: 100%;
-    
-}
-
-
-.form-control.success input {
-  border-color: var(--success-color);
-}
-
-.form-control.error input {
-  border-color: var(--error-color);
-}
-
-.form-control small {
-  color: var(--error-color);
-  position: absolute;
-  display: block;
- margin-bottom: 30px;
- padding-bottom: 20px;
- font-weight: 600;
-  visibility: hidden;
-}
-
-.form-control.error small {
-  visibility: visible;
-}
-
-.form-check{
-
-            float: left;
-            color: #ffffff;
-          font-size: 17px;
-           margin-left: 20px;
-        }     
-button{
-    left: 135px;
-    top: 10px;
-    margin-top: 40px;
-    padding-top: 50p;
-    position: relative;
-    height: 52px;
-    text-align: center;
-    width: 170px;
-    color: white;
-    background-color: #a87816;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: bold;
-    border-color: #ffffff;
-}
-button:hover{
-  background-color: #ffffff;
-  color: #19a223;
-  font-style: italic;
-
-}
-h2{
-          
-          color: #ffffff;
-           font-style: oblique;
-   font-size: 18px;
-   display: flex;
-   float: right;
-   margin: 0;
-         }
-         h3{
-           color: #ffffff;
-           font-style: oblique;
-   font-size: 18px;
-   
-         }
-         h1{
-           
-           text-align: center;
-   font-size: 30px;
-   font-style: italic;
-   padding-bottom: 30px;
-   font-family: fangsong;
-   font-weight: bolder;
-         }
-body:before {
-	content: '';
-	position: fixed;
-	width: 100vw;
-	height: 200vh;
-	background-image: url("business-buyers-buying-checkout.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-	-webkit-filter: blur(10px);
-	-moz-filter: blur(10px);
-	filter: blur(10px);
-}
-.mix{
-  margin-top: 20px;
-}
-    </style>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
     <div class="container">
-      <form id="form" class="form">
+      <form id="form" class="form" >
         <h1>Login here</h1>
        
         <div class="form-control">
@@ -173,77 +31,12 @@ body:before {
           <label class="form-check-label" for="checkRemember">Remember me</label>
 
       </div>
-        <h2>Don't have an account? sign up?</h2>
+        <h2 style="color:#a87816">Don't have an account?<span><a href="signup.html" style="cursor: pointer;color: white;text-decoration: none;">sign up?</a></span> </h2>
       </diV>
-        <button class="sub">Sign in</button>
+        <button class="sub"><a style="cursor: pointer;text-decoration: none;">Sign in</a></button>
       </form>
     </div>
 
-    <script>
-      const form = document.getElementById('form');
-
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-
-
-
-function showError(input, message) {
-const formControl = input.parentElement;
-formControl.className = 'form-control error';
-const small = formControl.querySelector('small');
-small.innerText = message;
-}
-
-
-function showSuccess(input) {
-formControl = input.parentElement;
-formControl.className = 'form-control success';
-}
-
-function checkEmail(input) {
-const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-if (re.test(input.value.trim())) {
-  showSuccess(input);
-} else {
-  showError(input, 'Enail is not valid');
-}
-}
-
-
-function checkRequired(inputArr) {
-inputArr.forEach(function (input) {
-  if (input.value.trim() === '') {
-    showError(input, `${getFieldName(input)} is required`);
-  } else {
-    showSuccess(input);
-  }
-});
-}
-
-function checkLength(input, min, max) {
-if (input.value.length < min) {
-  showError(input, `${getFieldName(input)} must be at least ${min} characters`);
-} else if (input.value.length > max) {
-  showError(input, `${getFieldName(input)} must be less than ${max} characters`);
-} else {
-  showSuccess(input);
-}
-}
-
-function getFieldName(input) {
-return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-}
-
-// Event listeners
-form.addEventListener('submit', function (e) {
-e.preventDefault();
-
-checkRequired([ email, password]);
-
-checkLength(password, 6, 25);
-checkEmail(email);
-
-});
-  </script>
+    <script src="login.js"></script>
   </body>
 </html>
