@@ -3,12 +3,17 @@
     margin:0;
     box-sizing: border-box;
 }
-body{
-    background-color: white;
-    color:orange;
+:root{
+    --maincolor: rgb(245, 198, 70);
 }
-.dark-mode{
-    background-color: black;
+#cart{
+    font-size:40px;
+    color:var(--maincolor,black);
+}
+ #contact{
+    color:var(--maincolor,black);
+ }
+ #contact:hover{
     color:white;
 }
 
@@ -37,33 +42,41 @@ header{
     margin-right:100px
 }
 .navcontent:hover{
- background-color: rgb(245, 198, 70);
- padding:0px 5px;
-}
-#filterList{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:20px;
+ background-color: var(--maincolor,black);
+  padding:0px 5px;
 }
 
-#filterList li a{
+footer ul li a:hover{
+    color: var(--maincolor,black)!important;
+}
+.fa{
+    padding:10px;
+    font-size: 10px;
+    width:35px;
+    /* text-align: center; */
     text-decoration: none;
-    font-size: 20px;
-    font-weight: lighter;
-    color:rgb(167, 165, 165)
+    border-radius: 60%;
 }
-#filterList li a:hover{
-    color: rgb(245, 198, 70);
+.fa:hover{
+   opacity:0.7;
 }
-.bottomNav{
+.fa-facebook{
+    color: #3b5998;
+    
+}
+.fa-twitter{
+    color: #55ACEE;
+}
+.fa-github{
+    color: #333;
+}
+.fa-linkedin{
+    color: #0077B5;
+}
+.copyright{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:2%
-}
-footer ul li a:hover{
-    color: rgb(245, 198, 70)!important;
 }
 
 
@@ -71,10 +84,10 @@ footer ul li a:hover{
 
 body {
     background-image: url('https://cdn.wallpapersafari.com/51/77/kn6xJE.jpg');
-    padding-top: 85px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color:white;
 }
 
 h1 {
@@ -168,6 +181,7 @@ textarea {
 .submit-btn {
     float: right;
     padding: 7px 35px;
+    margin-bottom: 15px;
     border-radius: 60px;
     display: inline-block;
     background-color: grey;
@@ -175,7 +189,7 @@ textarea {
     font-size: 18px;
     cursor: pointer;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-              0 2px 10px 0 rgba(0,0,0,0.07);
+                0 2px 10px 0 rgba(0,0,0,0.07);
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
@@ -205,6 +219,8 @@ input[type=checkbox]:checked + label {
 }
 
 .container{
+    margin-top: 50px;
+    width:60%;
     background-image: url('https://t4.ftcdn.net/jpg/03/03/67/79/360_F_303677964_rpvt1Q3ZDJARTCKKwgBEdfxble3Hyqbf.jpg');
     background-color:darkgoldenrod;
     background-position-y: center;
