@@ -25,6 +25,7 @@
 } 
 #categories{
     color:var(--categorycolor,black);
+   
 }
 #categories:hover{
     color:inherit;
@@ -86,11 +87,12 @@ footer ul li a:hover{
     background-color: var(--maincolor,black);;
 
 }
-#products{
+#products_1,#products_2,#products_3,#products_4,#products_5{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
     gap: 15px;
     max-width: 1100px;
+    margin-bottom: 50px;
 }
 
 .product{
@@ -157,7 +159,6 @@ footer ul li a:hover{
 .fa-github{
     color: #333;
 }
-
 .fa-linkedin{
     color: #0077B5;
 }

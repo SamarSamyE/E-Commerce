@@ -86,11 +86,12 @@ footer ul li a:hover{
     background-color: var(--maincolor,black);;
 
 }
-#products{
+#products,#products_2{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
     gap: 15px;
     max-width: 1100px;
+    margin-bottom: 20px;
 }
 
 .product{
