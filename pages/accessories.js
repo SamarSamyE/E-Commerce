@@ -3,7 +3,7 @@ function darkMode(){
     element.classList.toggle("dark-mode");
 }
 let http= new XMLHttpRequest();
-        http.open("get", "https://dummyjson.com/products");
+        http.open("get", "https://dummyjson.com/products/category/womens-jewellery");
         http.send();
         http.onload=function(){
             if (this.readyState === 4 && this.status === 200) {
