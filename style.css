@@ -6,8 +6,6 @@
 :root{
     --maincolor: rgb(245, 198, 70);
     --textcolor: black;
-    
-
 }
 
 .dark-mode{
@@ -65,7 +63,7 @@ header{
     color:rgb(167, 165, 165)
 }
 #filterList li a:hover{
-    color: var(--maincolor,black);;
+    color: var(--maincolor,black);
 }
 .bottomNav{
     display: flex;
