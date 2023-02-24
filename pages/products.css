@@ -86,7 +86,7 @@ footer ul li a:hover{
     background-color: var(--maincolor,black);;
 
 }
-#products{
+#products,#products_1,#products_2,#products_3,#products_4,#products_5{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
     gap: 15px;
@@ -95,19 +95,23 @@ footer ul li a:hover{
 
 .product{
     padding: 10px;
-    box-shadow: 0 5px  5px rgba(0,0,0,0.2);
+    box-shadow: 0 5px  5px var(--maincolor,black); 
+    
+}
+.product:hover{
+     transform: scale(1.1, 1.1);
 }
 .product img{
     width: 90%;
     margin: auto;
-    height: 300px;
+    height: 200px;
     display: block;
-    padding-top: 30px;
+    padding-top: 20px;
  }
 .product .title{
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom:20px;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -118,17 +122,24 @@ footer ul li a:hover{
 .product .price{
     text-align: center;
     font-weight: 600;
-    font-size: 28px;
-    color: rgb(126, 6, 6);
+    font-size: 23px;
+    color: rgb(148, 9, 9);
     font-family: sans-serif;
     text-shadow: 0 5px  5px rgba(0,0,0,0.2);
    
+}
+.product .discount{
+    text-align: center;
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight:lighter;
+    font-size: larger;
 }
 .product .cart{
     text-align: center;
     padding: 15px 0;
     margin-bottom: -5px; 
-    background-color:rgb(47, 182, 42);
+    background-color:rgb(72, 73, 72);
     color:white;
     font-size: 18px;
     cursor: pointer;

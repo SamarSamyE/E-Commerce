@@ -15,11 +15,14 @@ let http= new XMLHttpRequest();
                 <div class="product">
                 <img src="${item.images[0]}" alt="${item.thumbnail}">
                 <p class ="title">${item.title}</p>
-                <p class="description">${item.description}</p>
                 <p class="price">
                 <span>${item.price}</span>
                 <span>$</span>
                 </p>
+                <p class="discount">
+                <span>${((item.discountPercentage/100)*item.price)+item.price}</span>
+                <span>$</span>
+                </p> 
                 <p class="cart">Add to cart<i class="material-icons">shopping_cart</i></p>
                 </div>
                 `;
