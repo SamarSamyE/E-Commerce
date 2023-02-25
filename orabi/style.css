@@ -212,6 +212,7 @@ input[type=checkbox]:checked + label {
     
 }
 
+<<<<<<< Updated upstream:orabi/style.css
 .about{
 
     color: chocolate;
@@ -277,3 +278,30 @@ input[type=checkbox]:checked + label {
     justify-content: ;
   }
   
+=======
+.callus{
+
+    float: right;
+    margin-top: 35px;
+    background-color:grey;
+    background-image: url('https://t4.ftcdn.net/jpg/03/03/67/79/360_F_303677964_rpvt1Q3ZDJARTCKKwgBEdfxble3Hyqbf.jpg');
+    font-weight:bold;
+    font-size: medium;
+    color: #2d2d2d;
+    
+    
+
+}
+
+.callimg{
+
+    height: 100px;
+    width: 100px;
+    justify-content: right;
+    left: 30px;
+    padding: 20px;
+    margin:20px;
+    
+}
+
+>>>>>>> Stashed changes:contact/style.css
