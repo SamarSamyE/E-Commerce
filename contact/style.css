@@ -226,3 +226,17 @@ input[type=checkbox]:checked + label {
     background-position-y: center;
     
 }
+
+.callus{
+
+    margin-top: 35px;
+    height: 100 px;
+    width: 100px;
+    float: right;
+}
+.callusimg{
+    height: 100px;
+    width: 100px;
+    float: right;
+
+}
