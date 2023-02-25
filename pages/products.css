@@ -86,7 +86,7 @@ footer ul li a:hover{
     background-color: var(--maincolor,black);;
 
 }
-#products,#products_1,#products_2,#products_3,#products_4,#products_5{
+#products,#products_1,#products_2,#products_3,#products_4,#products_5,#productsA,#productsS,#productsW1,#productsW2{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
     gap: 15px;
