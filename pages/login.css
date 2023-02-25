@@ -1,0 +1,141 @@
+:root {
+    --success-color: #23cc71;
+    --error-color: #e74c3c;
+  }
+        body{
+          display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+        }
+        .container{
+          width: 450px;
+      margin-top: 50px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .form{
+          line-height: 2;
+      padding: 22px;
+      color: white;
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 430px;
+      height: 450px;
+      padding: 50px 40px;
+      background: rgb(178 178 178 / 10%);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+  .form-control{
+    position: relative;
+    padding: 10px;
+   
+  
+  }
+  
+  .form-control input{
+    
+    font-weight: bold;
+      height: 50px;
+      font-size: 17px;
+      font-style: italic;
+      width: 100%;
+      
+  }
+  
+  
+  .form-control.success input {
+    border-color: var(--success-color);
+  }
+  
+  .form-control.error input {
+    border-color: var(--error-color);
+  }
+  
+  .form-control small {
+    color: var(--error-color);
+    position: absolute;
+    display: block;
+   margin-bottom: 30px;
+   padding-bottom: 20px;
+   font-weight: 600;
+    visibility: hidden;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+  }
+  
+  .form-check{
+  
+              float: left;
+              color: #ffffff;
+            font-size: 17px;
+             margin-left: 20px;
+          }     
+  button{
+      left: 135px;
+      top: 10px;
+      margin-top: 40px;
+      padding-top: 50p;
+      position: relative;
+      height: 52px;
+      text-align: center;
+      width: 170px;
+      color: white;
+      background-color: #a87816;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: bold;
+      border-color: #ffffff;
+  }
+  button:hover{
+    background-color: #ffffff;
+    color: #19a223;
+    font-style: italic;
+  
+  }
+  h2{
+            
+            color: #ffffff;
+             font-style: oblique;
+     font-size: 18px;
+     display: flex;
+     float: right;
+     margin: 0;
+           }
+           h3{
+             color: #ffffff;
+             font-style: oblique;
+     font-size: 18px;
+     
+           }
+           h1{
+             
+             text-align: center;
+     font-size: 30px;
+     font-style: italic;
+     padding-bottom: 30px;
+     font-family: fangsong;
+     font-weight: bolder;
+           }
+  body:before {
+      content: '';
+      position: fixed;
+      width: 100vw;
+      height: 200vh;
+      background-image: url("business-buyers-buying-checkout.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      background-size: cover;
+      -webkit-filter: blur(10px);
+      -moz-filter: blur(10px);
+      filter: blur(10px);
+  }
+  .mix{
+    margin-top: 20px;
+  }
