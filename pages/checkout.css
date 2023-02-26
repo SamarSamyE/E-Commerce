@@ -1,3 +1,22 @@
+#checkoutText {
+  font-weight: bold;
+}
+
+.form-control.success {
+  border-color: green;
+}
+.form-control.error {
+  border-color: red;
+}
+
+.invalid-feedback {
+  /* display: block; */
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-danger-text);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -62,4 +81,43 @@ header {
 }
 footer ul li a:hover {
   color: rgb(245, 198, 70) !important;
+}
+
+.Btn-continue {
+  margin-bottom: 50px;
+}
+
+.Btn-continue .backTo {
+  margin-right: 30px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e09b18;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.Btn-continue .backTo:hover {
+  /* background-color: black; */
+  background-color: #bb8013;
+}
+
+.Btn-continue .continue {
+  margin-right: 30px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e09b18;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.Btn-continue .continue:hover {
+  background-color: #bb8013;
 }
