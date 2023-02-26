@@ -5,140 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>About Us E-Commerce</title>
+    <title>About Us </title>
 </head>
 <body>
-    
-    <!-- nav bar -->
-<nav>
-    <!-- <div class="topNav"> -->
-        <!-- left side of nav -->
-    <div class="leftside">
-        <span class="material-icons" title="Home" style="font-size:40px;color:rgb(245, 198, 70);">home</span>
-        <span class="navcontent">Product</span>
-        <span class="navcontent">About</span>
-        <span class="navcontent">Contact-US</span>
+  <nav style="position:sticky;top:0;z-index: 2;" class="navbar navbar-expand-lg bg-gradient">
+    <!-- left side of nav -->
+    <div class="container-fluid">   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>   
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">    
+    <div class="leftside ms-4 col-5">
+            <span class="navcontent material-icons" id="home" title="Home" style="font-size:40px;"><a href="../index.html" style="cursor: pointer;color:inherit;text-decoration: none">home</a></span>
+            <span class="navcontent"><a href="../pages/products.html" style="cursor: pointer;color:inherit;text-decoration: none">Product</a></span>
+            <span id="about"class="navcontent">About</span>
+            <span  class="navcontent"><a href="../contact/contact-us.html" style="cursor: pointer;color:inherit;text-decoration: none">Contact-US</a></span>
+        </div>
+        <!--title of website  -->
+        <header class=" ms-3" style="font-family: Georgia, 'Times New Roman', Times, serif">E-commerce</header>
+        <!-- right side of nav -->
+        <div class="rightside offset-2">
+            <span class="material-icons" id="cart" title="add to cart" >shopping_cart</span>
+            <span class="navcontent"><a href="../pages/login.html" style="cursor: pointer;color:inherit;text-decoration: none">login</a></span>
+            <span class="navcontent"><a href="../pages/signup.html"  style="cursor: pointer;color:inherit;text-decoration: none">sign up</a></span>
+        </div>
     </div>
-    <!--title of website  -->
-    <header style="font-family: Georgia, 'Times New Roman', Times, serif">E-commerce</header>
-    <!-- right side of nav -->
-    <div class="rightside">
-        <span class="material-icons" title="add to cart" style="font-size:40px;color:rgb(245, 198, 70);">shopping_cart</span>
-        <span class="navcontent"><a href="./pages/login.html" style="cursor: pointer;color:inherit;text-decoration: none">login</a></span>
-        <span class="navcontent"><a href="./pages/signup.html"  style="cursor: pointer;color:inherit;text-decoration: none">sign up</a></span>
-    </div>
-</div>
-
-  </nav>
-  <!-- bottom nav -->
-  <div class="bottomNav">
-    <div id="filter">
-        <p><button class="btn ms-5 ps-3 pe-3 pb-2 pt-2" style="background:rgb(245, 198, 70)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-            Filter
-        </button>
-        </p>
-        <div style="min-height: 120px;">
-        <div class="collapse collapse-horizontal " id="collapseWidthExample">
-            <div class="card card-body ms-5" >
-            <article class="row">
-            <header > 
-            <ul id="filterList" class="list-unstyled " >
-              <li > <a href="#" >All</a></li>
-              <li> <a href="#">Sunglasses</a></li>
-              <li> <a href="#">Watches</a></li>
-              <li> <a href="#">Fashion</a></li>
-              <li> <a href="#">Accesories</a></li>
-            </ul>
-            </header>
-            </article>
-            </div>
-            </div>
-         </div>  
-</div>
-<span class="material-icons" onclick="darkMode()" title="dark mode" style="font-size:40px;color:rgb(78, 78, 77);cursor: pointer;">dark_mode</span>
-</div>
+    </nav>
 <!-- ------------------------------------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------------------------------------ -->
 <!-- footer bar -->
 <!--form:-->
-
-<p>
-
-<h4>
-
-    ABOUT US
-</h4>
-
-<h1>We are <br> an eyewear <br> brand from <br> Alexandria,Egypt</h1>
-
-
-
-
-
-
-
-
+<p><h4> ABOUT US</h4>
+<h1 >We are <br> an E-Commerce <br> brand from <br> Alexandria,Egypt</h1>
 </p>
-
 <p class="about">
-
 this is a startup <br> fashion brand, we're trying to <br> achieve the best <br> quality we can come up with <br> with very reasonable <br> prices.
-
 </p>
-
 <img class="sunglasses1" src="images/sunglasses1.jpeg" alt="....">
-
 <h1>Our vision:</h1>
-<img class="sunglasses2" src="images/sunglasses2.jpg" alt="....">
-
+<img class="sunglasses2" style="width:40%" src="images/sunglasses2.jpg" alt="....">
 <p class="aboutvision"> we thrive to achieve the best quality <br>we can offer to our clients <br> for enquiring about any <br> of the products please <br>make sure that you visit <br> our contact us page ,<br>hopefully you'r goign to find <br>everything you need.</p>
 <img class="sunglasses3" src="images/sunglasses3.jpg" alt="...">
 <img class="sunglasses4" src="images/sunglasses4.jpg" alt="...">
-<div>
-    <h3 class="discounttext">Big discounts!!</h3>
+<div> <h3 class="discounttext">Big discounts!!</h3>
 <img class="discount" src="images/discount.png" alt="...">
-
 <p class="discountp">you can find discounts at <br> at all times please <br> make sure that you <br>check in regulary.</p>
-
-
 </div>
-
-
 </div>
-
-
-
-<div class="team" >
-  <h2 class="teamid">Our team:</h2>
-
-  
-  <div class="mostafa"><h3>mostafa</h3><img class="teamimg" src="images/mostafa.jpg" alt=""></div>
-
-  
-  <div class="wafaa"><h3>wafaa</h3><img class="teamimg" src="images/wafaa.jpg" alt=""></div>
-
-
-  <div class="samir">
-    <h3>samir</h3><img class="teamimg" src="images/samir.jpg" alt=""></div>  
-
-    <div class="samar">
-      <h3>samar</h3><img class="teamimg" src="images/samar.jpg" alt=""></div> 
-      
-      
-  <div class="orabi">
-    <h3>orabi</h3><img class="teamimg" src="images/orabi.jpg" alt=""></div> 
-  
-
-
+<p><h1 > Our Team:</h1>
+<div class="container-fluid text-secondary pt-5 mb-5">
+<div class="row">
+<div class="offset-md-1 col-md-3 col-sm-12 mb-3 me-md-3">
+<div class="card text-center rounded-5">
+<img src="./images/mostafa.jpg" class="rounded-top-5"style="height: 280px;" alt="mostafa" style="width:100%">
+<div class="containerteam">
+<h2 class="text-dark">Mostafa Ashraf</h2>
+<p class="title">CEO &amp; Founder</p>
+<p>mostafa@gmail.com</p>
 </div>
-
-
-
-
-
-
+</div>
+</div>
+ <div class="col-md-3 col-sm-12 mb-3 ms-md-3 me-md-3">
+ <div class="card text-center rounded-5">
+ <img src="./images/orabi.jpg" class="rounded-top-5"style="height: 280px;" alt="orabi" style="width:100%">
+      <div class="containerteam">
+      <h2 class="text-dark">Ahmed Orabi</h2>
+      <p class="title">Art Director</p>
+      <p>orabi@gmail.com</p>
+         </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 mb-3 ms-md-3">
+    <div class="card text-center rounded-5">
+      <img src="./images/samar.jpg" class="rounded-top-5" style="height: 280px;" alt="samar" style="width:100%">
+      <div class="containerteam">
+        <h2 class="text-dark">Samar Samy</h2>
+        <p class="title">Designer</p>
+        <p>samarsamy484@gmail.com</p>
+        </div>
+    </div>
+  </div>
+<div class="col-md-3 offset-md-3 col-sm-12 mb-2">
+  <div class="card text-center rounded-5">
+    <img src="./images/samir.jpg" class="rounded-top-5" style="height: 280px;" alt="samir" style="width:100%">
+    <div class="containerteam">
+      <h2 class="text-dark">Ahmed Samir</h2>
+      <p class="title">Designer</p>
+      <p>ahmedsamir@gmail.com</p>
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-12 mb-2">
+  <div class="card text-center rounded-5">
+    <img src="./images/wafaa.jpg" class="rounded-top-5" style="height: 280px;" alt="wafaa" style="width:100%">
+    <div class="containerteaam">
+      <h2 class="text-dark">Wafaa Muhammed</h2>
+      <p class="title">Designer</p>
+      <p>wafaamohamed@gmail.com</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- -------------------------------------------------- -->
   <footer class="container-fluid bg-body-tertiary">
     <div class="row p-2"> 
       <div class="offset-md-1 col-md-4 ">
@@ -146,12 +118,12 @@ this is a startup <br> fashion brand, we're trying to <br> achieve the best <br>
       <h5 class="text-black fw-bold mt-2 pb-3">About us</h5>
       </header>
       <ul class=" h6 list-unstyled">
-        <li><a href="#" class="text-black text-decoration-none">Home</a></li>
-        <li><a href="#" class="text-black text-decoration-none">Fashion</a></li>
-        <li><a href="#"class="text-black text-decoration-none">Sunglasses</a></li>
-        <li><a href="#" class="text-black text-decoration-none">Watches</a></li>
-        <li><a href="#" class="text-black text-decoration-none">Accesories</a></li>
-        <li><a href="#" class="text-black text-decoration-none">Contanct</a></li>
+        <li><a href="../index.html" class="text-black text-decoration-none">Home</a></li>
+        <li><a href="../pages/fashion.html" class="text-black text-decoration-none">Fashion</a></li>
+        <li><a href="../pages/sunglasses.html"class="text-black text-decoration-none">Sunglasses</a></li>
+        <li><a href="../pages/watches.html" class="text-black text-decoration-none">Watches</a></li>
+        <li><a href="../pages/accessories.html" class="text-black text-decoration-none">Accesories</a></li>
+        <li><a href="../contact/contact-us.html" class="text-black text-decoration-none">Contanct</a></li>
       </ul>
       </div>
       <div class="col-md-3">
@@ -171,15 +143,27 @@ this is a startup <br> fashion brand, we're trying to <br> achieve the best <br>
       <h5 class="text-black fw-bold mt-2 pb-3">Contact Us</h5>
       </header>
       <ul class="h6 list-unstyled">
-        <li ><a href="#" class="text-black text-decoration-none">123 Fifth Avenue, New York, NY 10160</a></li>
+        <li ><a href="#" class="text-black text-decoration-none">123 Fifth Agamy, Alexandria,Egypt</a></li>
         <li><a href="#" class="text-black text-decoration-none">contact@info.com</a></li>
         <li><a href="#"class="text-black text-decoration-none">929-242-6868</a></li>
       </ul>
       </div>
+      <div class="offset-md-1 col-md-9 col-sm-12">
+        <hr style="color:rgb(107, 105, 105)"/>
+        <div class="copyright">
+        <p style="color:rgb(155, 152, 152)">copyright @2023 All rights reserved</p>
+        <ul>
+          <a href="https://www.facebook.com/ahmed.samir.7712826?mibextid=ZbWKwL"  target="_blank" class="fa fa-facebook" style="font-size:24px"></a>
+          <a href="https://twitter.com/ahmedsamirr99?t=VSKsvejBvuj-vfzzeMLf2g&s=09" target="_blank" class="fa fa-twitter" style="font-size:24px"></a>
+          <a href="https://github.com/SamarSamyE/E-Commerce" target="_blank" class="fa fa-github" style="font-size:24px;text-decoration: none;"></a>
+          <a href="https://www.linkedin.com/in/samar-samy-a3a09b235" target="_blank" class="fa fa-linkedin" style="font-size:24px"></a>
+        </ul>
+      </div>
+    </div> 
     </div>
   </footer>
   
-    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>  
+    <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>  
     <script src="script.js"></script>       
 </body>
 </html>

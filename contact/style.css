@@ -26,6 +26,7 @@ nav{
     background-color: #ccc8c8;
     position: sticky,!important;;
     top:0!important;
+    color:black;
     
 }
 .leftside{
@@ -131,7 +132,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     .styled-input {
         width:100%;
     }
-}
+ }
 
 .styled-input label {
     color: #999;
