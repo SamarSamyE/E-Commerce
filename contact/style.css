@@ -22,7 +22,10 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     font-size: 25px;
-    margin: 1% 1%;
+    padding: 2% 1% 1%!important;
+    background-color: #ccc8c8;
+    position: sticky,!important;;
+    top:0!important;
     
 }
 .leftside{
@@ -219,8 +222,8 @@ input[type=checkbox]:checked + label {
 }
 
 .container{
-    margin-top: 50px;
-    width:60%;
+    width:50%;
+    margin-left: 5%;
     background-image: url('https://t4.ftcdn.net/jpg/03/03/67/79/360_F_303677964_rpvt1Q3ZDJARTCKKwgBEdfxble3Hyqbf.jpg');
     background-color:darkgoldenrod;
     background-position-y: center;
@@ -228,15 +231,19 @@ input[type=checkbox]:checked + label {
 }
 
 .callus{
-
-    margin-top: 35px;
-    height: 100 px;
-    width: 100px;
-    float: right;
+    background-color: #999;
+    width: 25%;
+    margin-right: 7%;
+    padding-left: 2%;
 }
 .callusimg{
     height: 100px;
-    width: 100px;
-    float: right;
-
+    width: 30%;
+}
+.callus p{
+    font-style: italic;
+    font-size: large;
+}
+.callus div{
+    margin: 3% 1% 10% 1%;
 }

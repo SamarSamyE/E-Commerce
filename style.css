@@ -26,7 +26,10 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     font-size: 25px;
-    margin: 1% 1%;
+    padding: 2% 1% 1%!important;
+    background-color: #ccc8c8;
+    position:sticky;
+    top:0;
     
 }
 .leftside{
