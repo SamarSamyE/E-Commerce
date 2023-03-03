@@ -60,27 +60,24 @@ header{
  padding:0px 5px;
 }
 #filterList{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:20px;
+    cursor: pointer;
+    
 }
 
-#filterList li a{
+#filterList span{
     text-decoration: none;
     font-size: 20px;
     font-weight: lighter;
-    color:rgb(167, 165, 165)
+    color:rgb(167, 165, 165);
+    list-style: none;
+    /* border: 5px solid; 
+    border-image: linear-gradient(45deg, rgb(250, 188, 16),red ); */
 }
-#filterList li a:hover{
+#filterList span:hover{
     color: var(--maincolor,black);;
+
 }
-.bottomNav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:2%
-}
+
 footer ul li a:hover{
     color: var(--maincolor,black)!important;
 }
@@ -88,7 +85,11 @@ footer ul li a:hover{
     background-color: var(--maincolor,black);;
 
 }
-#products,#products_1,#products_2,#products_3,#products_4,#products_5,#productsA,#productsS,#productsW1,#productsW2{
+#products,
+#productsF1,#productsF2,#productsF3,#productsF4,#productsF5,
+#productsA,
+#productsSun,
+#productsWatchesWomen,#productsWatchesMen{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
     gap: 15px;

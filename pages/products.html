@@ -13,24 +13,23 @@
 <body>
     <!-- nav bar -->
 <nav style="position:sticky;top:0;z-index: 2;" class="navbar navbar-expand-lg bg-gradient">
-    <!-- <div class="topNav"> -->
         <!-- left side of nav -->
         <div class="container-fluid">   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>   
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <div class="leftside ms-4 col-5">
+          <div class="collapse navbar-collapse  d-md-flex justify-content-md-between" id="navbarNavDropdown">
+    <div class="leftside ms-4 d-flex flex-column flex-md-row align-items-center">
         <span class="material-icons" title="Home" style="font-size:40px;"><a href="../index.html" style="cursor: pointer;color:inherit;text-decoration: none">home</a></span>
         <span id="categories" class="navcontent">Products</span>
         <span class="navcontent"><a href="../about/about-us.html" style="cursor: pointer;color:inherit;text-decoration: none">About</a></span>
         <span class="navcontent"><a href="../contact/contact-us.html" style="cursor: pointer;color:inherit;text-decoration: none">Contact-US</a></span>
     </div>
     <!--title of website  -->
-    <header class=" ms-3" style="font-family: Georgia, 'Times New Roman', Times, serif">E-commerce</header>
+    <header class=" ms-3 d-none" style="font-family: Georgia, 'Times New Roman', Times, serif">E-commerce</header>
     <!-- right side of nav -->
-    <div class="rightside offset-2">
-        <span class="material-icons" id="cart" title="add to cart" >shopping_cart</span>
+    <div class="rightside d-flex flex-column flex-md-row  align-items-center ms-sm-2">
+        <span class="material-icons mt-3" id="cart" title="add to cart" >shopping_cart</span>
         <span class="navcontent"><a href="login.html" style="cursor: pointer;color:inherit;text-decoration: none">login</a></span>
         <span class="navcontent"><a href="signup.html"  style="cursor: pointer;color:inherit;text-decoration: none">sign up</a></span>
     </div>
@@ -39,27 +38,15 @@
   </nav>
   <!-- bottom nav -->
   <div class="bottomNav">
-    <div id="filter">
-        <p><button id="filter" class="btn ms-5 ps-3 pe-3 pb-2 pt-2" style="background:rgb(172, 171, 168);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-            Filter
-        </button>
-        </p>
-        <div >
-        <div class="collapse collapse-horizontal " id="collapseWidthExample">
-            <div class="card card-body ms-5" >
-            <article class="row">
-            <header > 
-            <ul id="filterList" class="list-unstyled " >
-              <li > <a href="#" >All</a></li>
-              <li> <a href="#">Sunglasses</a></li>
-              <li> <a href="#">Watches</a></li>
-              <li> <a href="#">Fashion</a></li>
-              <li> <a href="#">Accessories</a></li>
-            </ul>
-            </header>
-            </article>
+        <div id="filter">
+            <div id="filterList" >
+              <span > <a  onclick="filterProductAll()">All</a></span>
+              <span> <a onclick="filterProductSun()">Sunglasses</a></span>
+              <span> <a  onclick="filterProductWatches()">Watches</a></span>
+              <span> <a onclick="filterProductFashion()">Fashion</a></span>
+              <span> <a onclick="filterProductAcc()">Accessories</a></span>
             </div>
-            </div>
+           
          </div>  
 </div>
 <span class="material-icons" onclick="darkMode()" title="dark mode" style="font-size:40px;color:rgb(78, 78, 77);cursor: pointer;">dark_mode</span>
@@ -67,22 +54,7 @@
 <!-- ------------------------------------------------------------------------------------------------------------ -->
 <div class="container-fluid">
 <div class="row">
-    <div id="sidebar" class="col-md-2 col-sm-12" >
-        <h3 class="p-2">Categories</h3>
-        <hr/>
-        <ul class=" h6 list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">ALL</a></li>
-            <hr/>
-            <li><a href="fashion.html" class="text-black text-decoration-none">Fashion</a></li>
-            <hr/>
-            <li><a href="sunglasses.html"class="text-black text-decoration-none">Sunglasses</a></li>
-            <hr/>
-            <li><a href="watches.html" class="text-black text-decoration-none">Watches</a></li>
-            <hr/>
-            <li><a href="accessories.html" class="text-black text-decoration-none ">Accessories</a></li>
-         </ul>
-    </div>
-    <div id="products" class="col-md-10 col-sm-12 "> </div>
+  <div id="products" class="col-md-10 col-sm-12 "> </div>
 </div> 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------------ -->

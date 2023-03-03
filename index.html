@@ -12,27 +12,28 @@
 </head>
 <body>
     <!-- nav bar -->
-<nav class="navbar navbar-expand-lg bg-gradient">
+<nav style="position:sticky;top:0;z-index: 2;" class="navbar navbar-expand-lg bg-gradient">
         <!-- left side of nav -->
     <div class="container-fluid">   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>   
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <div class="leftside ms-4 col-5">
+    <div class="collapse navbar-collapse d-md-flex justify-content-md-between" id="navbarNavDropdown">
+    <div class="leftside ms-3 d-flex flex-column flex-md-row align-items-center">
         <span class="material-icons" id="home" title="Home" >home</span>
         <span class="navcontent"><a href="./pages/products.html" style="cursor: pointer;color:inherit;text-decoration: none">products</a></span>
         <span class="navcontent"><a href="./about/about-us.html" style="cursor: pointer;color:inherit;text-decoration: none">About</a></span>
         <span class="navcontent"><a href="./contact/contact-us.html" style="cursor: pointer;color:inherit;text-decoration: none">Contact Us</a></span>
     </div>
     <!--title of website  -->
-    <header  class=" ms-3" style="font-family: Georgia, 'Times New Roman', Times, serif">E-commerce</header>
+    <header  class="ms-3 d-none" style="font-family: Georgia, 'Times New Roman', Times, serif">E-commerce</header>
     <!-- right side of nav -->
-    <div class="rightside offset-2">
-        <span class="material-icons" id="cart" title="add to cart" >shopping_cart</span>
+    <div class="rightside d-flex flex-column flex-md-row  align-items-center">
+        <span class="material-icons mt-3" id="cart" title="add to cart" >shopping_cart</span>
         <span class="navcontent"><a href="./pages/login.html" style="cursor: pointer;color:inherit;text-decoration: none">login</a></span>
         <span class="navcontent"><a href="./pages/signup.html"  style="cursor: pointer;color:inherit;text-decoration: none">sign up</a></span>
     </div>
+
 </div>
 </div>
 </nav>
@@ -49,11 +50,11 @@
             <article class="row">
             <header > 
             <ul id="filterList" class="list-unstyled " >
-              <li > <a href="#" >All</a></li>
-              <li> <a href="#">Sunglasses</a></li>
-              <li> <a href="#">Watches</a></li>
-              <li> <a href="#">Fashion</a></li>
-              <li> <a href="#">Accessories</a></li>
+              <li > <a href="#" class="buttonAll" onclick="filterProduct('all')">All</a></li>
+              <li> <a href="#" class="buttonSunglasses" onclick="filterProduct('sun')">Sunglasses</a></li>
+              <li> <a href="#" class="buttonWatches" onclick="filterProduct('watches')">Watches</a></li>
+              <li> <a href="#" class="buttonFashion" onclick="filterProduct('fashion')">Fashion</a></li>
+              <li> <a href="#" class="buttonAcc" onclick="filterProduct('acc')">Accessories</a></li>
             </ul>
             </header>
             </article>
@@ -64,6 +65,371 @@
 <span class="material-icons" onclick="darkMode()" title="dark mode" style="font-size:40px;color:rgb(78, 78, 77);cursor: pointer;">dark_mode</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------------ -->
+<div class="slideshow2">
+  <div class="slideshow">
+    
+  <div class="slider">
+    <div class="slides">
+      <!-- Radio Button Start  -->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!-- Radio Button Close  -->
+  
+      <!-- Slide Image Start -->
+      <div class="slide first">
+     <p class="firsttxt">20% off new season top picks</p>
+     <p class="secondtxt">
+      The dress must follow the body of a woman, not the body following the shape of the dress.
+     </p>
+     <p class="thirdtxt">discover our new collection</p>
+     <button class="newbtn">shop now</button>
+       
+      </div>
+      <div class="slide">
+        <p class="firsttxt">20% off new season top picks</p>
+        <p class="secondtxt">
+          Elegance comes from being as beautiful inside as outside.
+        </p>
+        <p class="thirdtxt">discover our new collection</p>
+        <button class="newbtn">shop now</button>
+      </div>
+  
+  
+      <div class="slide">
+        <p class="firsttxt">20% off new season top picks</p>
+        <p class="secondtxt">
+          Our judgments, like our watches, none go just alike, yet each believes his own
+        </p>
+        <p class="thirdtxt">discover our new collection</p>
+        <button class="newbtn">shop now</button>
+      </div>
+  
+  
+      <div class="slide">
+        <p class="firsttxt">20% off new season top picks</p>
+        <p class="secondtxt">
+          Don't be afraid to show your light.. If it ends up being too much for people.. tell them to wear sunglasses!
+            </p>
+        <p class="thirdtxt">discover our new collection</p>
+        <button class="newbtn">shop now</button>
+        </div>
+  <div>
+  <p class="firsttxt">20% off new season top picks</p>
+        <p class="secondtxt">
+          In order to be irreplaceable one must always be different
+        </p>
+        <p class="thirdtxt">discover our new collection</p>
+        <button class="newbtn">shop now</button>
+      </div>
+    
+  
+      <!-- Slide Image Close -->
+  
+      <!-- Automatic Navigation Start -->
+      <div class="navigation-auto">
+        <div class="auto-btn-1"></div>
+        <div class="auto-btn-2"></div>
+        <div class="auto-btn-3"></div>
+        <div class="auto-btn-4"></div>
+      </div>
+      <!-- Automatic Navigation Close -->
+    </div>
+  
+      <!-- Mannual Navigation Start -->
+      <div class="navigation-mannual">
+        <label for="radio1" class="mannual-btn"></label>
+        <label for="radio2" class="mannual-btn"></label>
+        <label for="radio3" class="mannual-btn"></label>
+        <label for="radio4" class="mannual-btn"></label>
+      </div>
+      <!-- Mannual Navigation Close -->
+  </div></div></div>
+  <!-- Image Slider Close -->
+  <script>
+    var counter = 1;
+    setInterval(function()  {
+      document.getElementById('radio'+ counter).checked = true;
+      counter++; 
+  
+      if(counter>4){
+        counter=1
+      }
+  
+    }, 5000);
+  </script>
+  
+
+  
+
+
+  <div class="hint">
+      <div class="container">
+        
+        <div class="abouttxt">
+          <h1>You deserve a little gift that says "love"</h1>
+          <hr>
+        
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua </p>
+    <button class="choose">choose your products</button>
+        </div>
+    
+        <div class="about">
+          <img src="./pages/61ivbZs5BbL._AC_UF894,1000_QL80_.jpg">
+    
+        </div>
+    
+      </div>
+    </div>
+
+<hr style="color: #06346a; width: 70%; margin-left: 200px; margin-bottom: 30px;">
+
+      <div class="services">
+          <div class="container">
+            <h2 class="special-heading"> Bestsellers</h2>
+              <p class="busy"> Don't be busy, be productive</p>
+              <div class="service-content">
+                <div class="col"><!--3nde 3 col kol col feh thto hgat-->
+                  <div class="serv">
+                    <img src="./pages/SD-BH180P_ANGLE_300x.avif" width="50px" height="50px">
+                    <div class="txt">
+                      <h2>  
+                          Givenchy GV40049I 02A Wrap Sunglasses
+                      </h2>
+                        <p style=" text-align: left;font-size: 19px; padding-top: 70px;">
+                          $600.00
+
+                        </p>
+                        <button>add to cart</button>
+                    </div></div>
+    
+                  <div class="serv">
+                    <img src="./pages/71-CyN37D2L._AC_UX679_.jpg" width="50px" height="50px">
+                    <div class="txt">
+                      <h2>
+                          Crochet Knitted Open Back Mini Dress
+                      </h2>
+                        <p style=" text-align: left;font-size: 19px; padding-top: 70px;">
+                         33.60$
+                        </p>
+                        <button>add to cart</button>
+                    </div></div> </div>
+                    
+                <div class="col"><!--3nde 3 col kol col feh thto hgat-->
+                  <div class="serv">
+                    <img src="./pages/istockphoto-895681032-170667a.jpg" width="50px" height="50px">
+                    <div class="txt">
+                      <h2>
+                          Gold Butterfly and Pearl necklace 4-Pack
+                      </h2>
+                        <p style=" text-align: left;font-size: 19px; padding-top: 70px;">
+                         60$
+                        </p>
+                        <button>add to cart</button>
+                    </div>  </div>
+    
+                  <div class="serv">
+                    <img src="./pages/istockphoto-1180453576-612x612 (1).jpg" width="150px" height="50px">
+                    <div class="txt">
+                      <h2>
+                          TISSOT - SUPERSPORT CHRONO VUELTA - T125.617.17.051.01
+                      </h2>
+                        <p style=" text-align: left; font-size: 19px; padding-top: 70px;">
+                          200$ </p>
+                          <button>add to cart</button>
+                    </div>    </div> </div>
+          
+                   <div class="col">
+                    <div class="image-card">
+                      <img src="./pages/51YcOn65B4L._AC_UF1000,1000_QL80_.jpg" >
+                      
+                    </div>
+                   
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+<div class="features2">
+  <div class="founder">
+      
+    <p>FOUNDERS TOP 5 FAVORITES</p> </div>
+  <div class="container">
+   
+    <diV class="feat2">
+    <img src="./pages/images (3).jpeg">
+         
+         <p>Classic elegant sunglasses</p>
+         <h1>33$</h1>
+    </diV>
+
+    <diV class="feat2">
+      <img src="./pages/1.jpg" >
+        
+         <p>Daniel Wellington - Watch</p>
+          <h1>200$</h1>
+    </diV>
+    
+    <diV class="feat2">
+      <img src="./pages/3fe422cf37124049945a124169df3377.jpg" >
+        
+         <p>FLOWY STRAP DRESS</p>
+          <h1>13$</h1>
+    </diV>
+    
+    <diV class="feat2">
+      <img src="./pages/download.jpeg " >
+       
+         <p>jewelery set for hair</p>
+          <h1>12$</h1>
+    </diV>
+
+    <diV class="feat2">
+      <img src="./pages/04123ab4-888e-4f1d-ba4b-04ff9a0580e3.dc6c74579c4bca2c7ddfc16ef3f73b0b.jpeg" >
+       
+         <p>MIDI CUT-OUT DRESS</p>
+          <h1>120$
+          </h1>
+    </diV></div></div>
+
+
+
+    <div class="review">
+      <div class="rev">
+        <img src="./pages/65047e_03ce07cfc00646dda347a7082c947516_mv2.jpg" >
+      </div>
+      <div class="client">
+        <hr>
+        <h1>They love us</h1>
+    
+    
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+        <h5>
+          Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit. Phasellus volutpat malesuada mollis. Curabitur maximus maximus faucibus. Phasellus interdum imperdiet lacus finibus.
+        </h5>
+        <p>
+          jack Oliver
+        </p>
+        <button class="read"> read more</button>
+        <p class="more" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Phasellus volutpat <br> malesuada mollis. Curabitur maximus maximus faucibus. Phasellus interdum imperdiet lacus finibus.</p>
+           
+    <hr>
+      </div>
+    
+    </div>
+
+
+    <div class="specific">
+      <div class="speimg">
+    <img src="./pages/41a79dM+qQL._AC_SX679_.jpg">
+      </div>
+      <div class="spetxt">
+      
+    <h2>
+      Deal of the month
+    </h2>
+    <h3>
+      Tommy Hilfiger Round Sunglasses for women
+    
+    </h3>
+    <h4>
+      123$
+    </h4>
+    <h5>
+      FREE delivery Sunday, april 4
+    </h5>
+    
+    <button style=" margin-right: 20px;"> add to cart</button>
+    <button>buy now</button>
+    
+      </div>
+     
+    </div>
+
+    
+    
+          
+    <div class="features">
+      <div class="container">
+        <diV class="feat">
+        <img src="./pages/1758556.png" >
+             <h1>Free Shipping Method</h1>
+             <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+        </diV>
+    
+        <diV class="feat">
+          <img src="./pages/6993594.png">
+             <h1>Secure Payment System</h1>
+             <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+        </diV>
+     
+        <diV class="feat">
+          <img src="./pages/508190.png" >
+             <h1>Online Support 24/7
+            </h1>
+             <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+        </diV></div></div>
+
+
+
+            <div class="new">
+              
+              <p style="font-family: cursive;
+              font-weight: bolder;
+              font-size: 35px;
+              color: #ce9b0f; margin-top: 30px; text-decoration:underline;">New Arrivals</p>
+              
+              <div class="newproduct" >
+              <div style="display: flex; gap: 20px; " class="container">
+                 
+              <button class="sun">sunglasses</button>
+          
+          <button  class="acc">Accessories</button>
+          
+          
+          <button class="dress">dresses</button>
+          
+          <button  class="watch">watches</button>
+             
+          
+          </div></div></div>
+             
+          
+          <div class="newproductimg" style="    margin-top: 20px;
+          margin-left: 300px; letter-spacing: 40px; margin-bottom: 40px;" >
+              <div class="container">
+               
+              <img class="img1" src="./pages/download.jpeg" >
+              <img class="img2" src="./pages/pngimg.com - sunglasses_PNG86.png" >
+              <img class="img3" src="./pages/5c3c1866af8e3628163e7af10ea82ada.jpg" >
+              <img class="img4" src="./pages/images (3).jpeg" >
+          
+              <img class="img5" src="./pages/download (1).jpeg" style="display: none;">
+              <img class="img6" src="./pages/3fe422cf37124049945a124169df3377.jpg"  style="display: none;">
+              <img class="img7" src="./pages/H048a01cdd5564809809d6dc2c6cfb596m.jpg"  style="display: none;">
+              <img class="img8" src="./pages/H6e59ec2205274bada6d8d1fbd199d1584.jpg"  style="display: none;" >
+          
+              <img class="img9" src="./pages/images (4).jpeg"  style="display: none;" >
+              <img class="img10" src="./pages/images (5).jpeg"style="display: none;">
+              <img class="img11" src="./pages/istockphoto-846266546-612x612.jpg"  style="display: none;" >
+              <img class="img12" src="./pages/pngtree-high-end-waterproof-mechanical-watch-background-image_186168.jpg"  style="display: none;">
+          
+              
+              <img class="img13" src="./pages/1.jpg"style="display: none;" >
+              <img class="img14" src="./pages/1 (1).jpg"  style="display: none;">
+              <img class="img15" src="./pages/bef7d2078dba115530d26ad997f4f8e5.jpeg"  style="display: none;" >
+              <img class="img16" src="./pages/8982c068271697de96eb88f844d1bfbd.jpeg"   style="display: none;">
+            
+          </div></div>
+    
 <!-- ------------------------------------------------------------------------------------------------------------ -->
 <!-- footer bar -->
   
@@ -120,6 +486,10 @@
     </div>
   </footer>
   <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>  
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
   <script src="script.js"></script> 
 </body>
 </html>
