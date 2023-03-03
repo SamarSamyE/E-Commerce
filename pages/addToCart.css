@@ -1,0 +1,29 @@
+#listOfItems {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.item {
+  position: relative;
+
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+img {
+  position: absolute;
+  right: 0;
+  /* margin-right: 25%; */
+  width: 100px;
+  height: 100px;
+  /* align-items: end ; */
+}
+
+span {
+  margin-top: 40px;
+}

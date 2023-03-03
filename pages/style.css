@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  margin: 1% 1%;
+}
+.leftside {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  cursor: pointer;
+}
+.rightside {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  cursor: pointer;
+}
+header {
+  margin-right: 100px;
+}
+.navcontent:hover {
+  background-color: rgb(245, 198, 70);
+  padding: 0px 5px;
+}
+#filterList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+#filterList li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(167, 165, 165);
+}
+#filterList li a:hover {
+  color: rgb(245, 198, 70);
+}
+.bottomNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+footer ul li a:hover {
+  color: rgb(245, 198, 70) !important;
+}
+img {
+  width: 300px;
+  height: 400px;
+}
+.special-heading {
+  color: #dadada;
+  text-align: center;
+  margin: 20px;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.About .container p {
+  text-align: center;
+  margin: -50px 0 0;
+  font-size: 20px;
+  color: #434141;
+}
+
+.About-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .about-text {
+    text-align: center;
+    flex-direction: column; /*3shan ynzlo tht b3d*/
+
+    margin-top: 40px;
+  }
+
+  .newimage img {
+    margin: 0 auto 60;
+    padding-left: 110px;
+  }
+
+  .About {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.newimage::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 460px;
+  border-left: 80px solid #e6c642;
+  /* border-bottom: 80px solid var(--main-color); */
+  z-index: -1;
+  /* bottom: -20px; */
+  top: 475px;
+  left: 50px;
+}
+
+.newimage::after {
+  right: 800px;
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 450px;
+  border-left: 80px solid #175d99;
+  border-bottom: 80px solid #175d99;
+  z-index: -1;
+  /* bottom: -20px; */
+  top: 475px;
+  /* left: 120px; */
+}
+
+.about-text {
+  /*flex-basis: calc(100%-500px); /*3shan akhale l klam mfrod w f nfs lw2t wakhd nos lshasha gnb lsora..f ana khlet 500px d llsora */
+  flex: 1; /*3shn klam ytht gnb sora*/
+  padding-top: 40px;
+  padding-left: 200px;
+  line-height: 1.5;
+}
+.About .container p {
+  text-align: center;
+  margin: -50px 0 0;
+  font-size: 20px;
+  color: #434141;
+}
+
+.about-text .par1 {
+  text-align: left;
+  padding-bottom: 60px;
+  font-weight: bolder;
+}
+
+.about-text hr {
+  width: 300px;
+  /* border: tan; */
+  /* line-height: 5; */
+  /* font-weight: bolder; */
+  display: inline-block;
+  /* text-align: left; */
+  border-color: #1fdabb;
+}
+
+.about-text .par2 {
+  text-align: left; /*3shn klam klo ybd2 left*/
+  padding-bottom: 120px;
+  font-weight: bolder;
+  padding-top: 90px;
+  color: #d8dbe1;
+}

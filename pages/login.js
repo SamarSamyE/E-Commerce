@@ -70,3 +70,4 @@ form.addEventListener("submit", function (e) {
     window.location.href = "../index.html";
   }
 });
+document.getElementsByClassName("navcontent").style.display = "none";
