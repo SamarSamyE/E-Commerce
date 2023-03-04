@@ -158,11 +158,6 @@ function filterProductAcc() {
 //////////////////////////////////////////////////////////////////////////////////
 ////watches category
 function filterProductWatches() {
-  // document.getElementById("products").style.display="none";
-  // document.getElementById("fashion").style.display="none";
-  // document.getElementById("productsA").style.display="none";
-  // document.getElementById("productsSun").style.display="none";
-  let http_w1 = new XMLHttpRequest();
   http_w1.open("get", "https://dummyjson.com/products/category/mens-watches");
   http_w1.send();
   http_w1.onload = function () {

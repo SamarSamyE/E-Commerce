@@ -7,7 +7,6 @@
     --maincolor: rgb(245, 198, 70);
     color: black;
     --categorycolor:  rgb(250, 188, 16);
-    
 }
 
 .dark-mode{
@@ -20,9 +19,9 @@
     font-size:40px;
     color:var(--maincolor,black);
 }
-#filter{
+/* #filter{
    font-size: larger;
-} 
+}  */
 #categories{
     color:var(--categorycolor,black);
 }
@@ -36,9 +35,8 @@ nav{
     font-size: 25px;
     padding: 2% 1% 1%!important;
     background-color: #ccc8c8;
-   
-    
 }
+
 .leftside{
     display:flex;
     flex-direction: row;
@@ -52,39 +50,40 @@ nav{
     cursor: pointer; 
    
 }
-header{
-    margin-right:100px
+.bottomnav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3%;
 }
 .navcontent:hover{
  background-color: var(--maincolor,black);
  padding:0px 5px;
 }
 #filterList{
+    margin-left: 4%;
     cursor: pointer;
-    
 }
 
 #filterList span{
-    text-decoration: none;
+    margin-left: 8px;
+    padding: 10px;
     font-size: 20px;
     font-weight: lighter;
     color:rgb(167, 165, 165);
     list-style: none;
-    /* border: 5px solid; 
-    border-image: linear-gradient(45deg, rgb(250, 188, 16),red ); */
+    border: 2px solid var(--maincolor,black);
+    border-radius: 25px;
 }
 #filterList span:hover{
     color: var(--maincolor,black);;
-
 }
 
 footer ul li a:hover{
     color: var(--maincolor,black)!important;
 }
-#sidebar{
-    background-color: var(--maincolor,black);;
 
-}
 #products,
 #productsF1,#productsF2,#productsF3,#productsF4,#productsF5,
 #productsA,
@@ -92,15 +91,14 @@ footer ul li a:hover{
 #productsWatchesWomen,#productsWatchesMen{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,auto));
-    gap: 15px;
-    max-width: 1100px;
+    gap: 16px;
+    margin-top: 3%;
 }
 
 .product{
     padding: 10px;
     box-shadow: 0 5px  5px var(--maincolor,black); 
     border-radius: 15px;
-    
 }
 .product:hover{
      transform: scale(1.1, 1.1);
@@ -108,21 +106,20 @@ footer ul li a:hover{
 .product img{
     width: 90%;
     margin: auto;
-    height: 200px;
+    height: 180px;
     display: block;
     padding-top: 20px;
- }
+}
+
 .product .title{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: 600;
 }
-.product .description{
-   padding: 0 30px 30px 10px; 
-   line-height: 22px;
-}
+
+/* style of the product's price */
 .product .price{
     text-align: center;
     font-weight: 600;
@@ -130,8 +127,8 @@ footer ul li a:hover{
     color: rgb(148, 9, 9);
     font-family: sans-serif;
     text-shadow: 0 5px  5px rgba(0,0,0,0.2);
-   
 }
+
 .product .discount{
     text-align: center;
     text-decoration: line-through;
@@ -142,16 +139,16 @@ footer ul li a:hover{
 .product .cart{
     text-align: center;
     padding: 15px 0;
-    margin-bottom: -5px; 
+    margin-left:5%;
+    width: 90%;
     background-color:rgb(126, 129, 126);
     color:white;
     font-size: 18px;
     cursor: pointer;
+    border:none;
     border-radius: 10px;
 }
-.product .cart i{
-    padding-left: 10px;
-} 
+
 .fa{
     padding:10px;
     font-size: 10px;
@@ -181,4 +178,26 @@ footer ul li a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+@media (max-width: 650px){
+    .bottomnav{
+        display: flex;
+        flex-direction: column;
+    }
+    #filterList{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:30%;
+        text-align: center;
+        margin: auto;
+    }
+    #filterList span{
+        margin: 3%;
+    }
+    #dark{
+        position: absolute;
+        right:2%;
+        top:10%;
+    }
 }
