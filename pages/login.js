@@ -59,10 +59,25 @@ return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 // Event listeners
 form.addEventListener('submit', function (e) {
 e.preventDefault();
-checkRequired([ email, password]);
-checkLength(password, 6, 25);
-checkEmail(email);
-if((requiredErr && lenghtErr && emailErr)===true){
+//checkRequired([ email, password]);
+const emailvalue = document.getElementById('email').value;
+  const passwordvalue = document.getElementById('password').value;
+  let storageusernamed = localStorage.getItem("email");
+  let storagepassword = localStorage.getItem("password");
+if(emailvalue == storageusernamed && storagepassword == passwordvalue){
+  localStorage.setItem("loginstatus",true);//incase eno 3ml login h save l data d 3shan a check hwa logged in wla
     window.location.href="../index.html"
+ }else{
+
+  const email = document.querySelector('.email');
+  const password = document.querySelector('.password');
+  const emaileror = document.querySelector('.emailerr');
+  const pasworderor = document.querySelector('.pasworderr');
+
+  email.style.border = '1px solid red';
+  password.style.border = '1px solid red';
+  emaileror.style.visibility = 'visible';
+  pasworderor.style.visibility = 'visible';
+
  }
 });

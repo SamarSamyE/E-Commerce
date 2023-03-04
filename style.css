@@ -36,6 +36,10 @@ nav{
 header{
     margin-right:100px
 }
+.hllo{
+    color: rgb(203, 139, 35);
+    margin-right:50px ;
+}
 .navcontent:hover{
  background-color: rgb(245, 198, 70);
  padding:0px 5px;

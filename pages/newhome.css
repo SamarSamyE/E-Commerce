@@ -1,0 +1,517 @@
+   .carousel-inner{
+    width: 100%;
+    
+    margin-top: 5%;
+    margin-bottom: 2%;
+    background-image: url();
+   
+   }
+   .carousel-inner p{
+    color: azure;
+   }
+.carousel-item button{
+    border: none;
+    font-weight: 500;
+    font-size: 23px;
+    /* height: 20%; */
+    width: 25%;
+    margin-left: 10%; 
+    margin-top: 2%;
+    margin-bottom: 6%;
+    color: white;
+    background-color: #f2cf5c;
+    height: 50px;
+}
+.carousel-item button:hover{
+    background-color: #e1b215;
+    color: white;
+}
+.carousel-item h5{
+
+    font-weight: 900;
+    font-family: fangsong;
+    font-weight: black;
+    font-size: 34px;
+    margin-left: 8%;
+    color: #ffa84e;
+}
+.carousel-item p{
+
+    font-weight: 700;
+    margin-top: 2%;
+    /* font-family: cursive; */
+    font-size: 22px;
+    margin-left: 15%;
+    color: #99680b;
+    font-family: math;
+}
+.carousel-indicators{
+    margin-left: 21%;
+  
+}
+
+   .card{
+    border: none;
+    margin-left: 13%;
+    /* max-width: 540px; */
+    width: 85%;
+   }
+   .love img{
+    width: 70%;
+   }
+   .love{
+    margin-top: 4%;
+    margin-bottom: 5%;
+   }
+   .love .card-body{
+    margin-top: 3%;
+    line-height: 2;
+    width: 90%;
+   }
+   .love .card-body h5{
+    color: black;
+    margin-bottom: 8%;
+    font-style: italic;
+    font-size: 30px;
+   }
+   .love button{
+    margin-top: 2%;
+    margin-left: 15%;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #f5cb42;
+    height: 57px;
+    width: 35%;
+    border: none;
+   }
+   .love hr{
+    width: 50%;
+    margin-left: 5%;
+    color: #99680b;
+    margin-bottom: 5%;
+   }
+   
+.love button:hover{
+    background-color: #dfbf1e;
+
+}
+
+  .love .card-text{
+    font-size: 17px;
+    color: #c59281;
+    margin-bottom: 5%;
+  }
+
+.special-heading{
+ color: #dadada;
+   text-align: center;
+   margin: 20px;
+   font-size: 100px;
+   font-weight: bold;
+}
+
+.services .container p{
+ text-align: center;
+   margin: -50px 0 0;
+   font-size: 20px;
+   color: #64615d;;
+
+}
+.service-content{
+ display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+   gap: 90px;
+   margin-top: 60px;
+   margin-bottom: 20px;
+
+}
+.serv{
+ 
+   margin-bottom: 30px;
+ 
+}
+.serv img{
+   width: 250px;
+   height: 300px;
+}
+.serv img:hover{
+   transform: scale(1.1,1.1);
+}
+
+.serv .txt button{
+   margin-left: 20px;
+   color: white;
+   border: none;
+   background-color: #f4960b;
+   font-weight: 600;
+   font-size: 17px;
+   height: 40px;
+   margin-top: 20px;
+   width: 250px;
+}
+
+.serv .txt button:hover{
+   color: white;
+   background-color: #ab6e13;;
+}
+
+
+.txt h2{
+   position: relative;
+   top: 20px;
+   margin-top: 20px;
+   font-weight: 700;
+   margin: 0px;
+   font-size: 23px;
+
+}
+.services .txt p{
+
+ margin-top: 10%;
+   font-size: 17px;
+   color: #89837c;
+margin-right: 20%;
+font-size: 20px;
+
+}
+ 
+
+
+.image-card{
+text-align: center;
+position: relative;
+}
+.lit h5{
+   position: absolute;
+   left: 1150px;
+   margin-top: 80px;
+}
+.image-card::before{ /*3uza ahot hga 3la ymen l sora*/
+content: "";
+  top: 30px;/*3shn ykon akbr mn sora tal3 fo2eha y3ne atwl mnha*/
+   height: calc(100% + 10px);
+   position: absolute;
+   background-color: #06346a;
+   content: "";
+   width: 60px;
+   right: -25px;
+   z-index: -1;/*3shn yrg3 wra l sora */
+}
+
+.image-card img{
+   margin-top: 70px;
+   position: relative;
+   width: 400px;
+   height: 650px;
+   right: 30px;
+
+}
+
+.col  .card img{
+    width: 50%;
+}
+
+.btn{
+    background-color: #64615d;
+    width: 30%;
+}
+
+.card-group .card img{
+    height: 48%;
+    width: 80%;
+    
+}
+.container-fluid .founders{
+    background-color:rgb(238 245 246);
+}
+
+.card-group{
+margin-right: 8%;
+margin-bottom: 5%;
+
+   
+}
+.card-group .card{
+   
+    background-color: rgb(238 245 246);;
+
+}
+.card-group p{
+    text-align: center;
+}
+.card-group .card{
+    margin-top: 5%;
+}
+.card-group h5{
+   
+    font-size: 18px;
+}
+
+.card-group button:hover{
+    background-color: #e1b215;
+}
+.card-group button{
+    
+    font-weight: 600;
+    font-size: 20px;
+    height: 40px;
+    font-family: inherit;
+    color: #fafafa;
+    width: 90%;
+    background-color: #125d86;
+    border: none;
+}
+.founder 
+
+{margin-top: 5%;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 3%;
+
+}
+.card-body{
+    width: 100%;
+    
+}
+.deal .card-body h5{
+    font-family: ui-sans-serif;
+    font-weight: bold;
+    color: #da8a20;
+    font-style: italic;
+    font-size: 40px;
+}
+.deal h4{/*free delievry*/
+    margin-bottom: 7%;
+    font-weight: bold;
+    font-family: monospace;
+    color: #ab0d0d;
+}
+.deal .card-text{
+    font-size: 20px;
+    color: grey;
+}
+.deal .card-text1 {
+    font-size: 20px;
+    color: #ebc18e;
+    margin-left: 30%;
+}
+.deal img{
+    margin-top: 15%;
+}
+
+.deal button{
+    color: white;
+    background: #d6a110bd;
+    border: none;
+    font-weight: 600;
+    font-size: 21px;
+    height: 45px;
+    /* margin-left: 10%; */
+    width: 50%;
+
+}
+
+.deal button:hover{
+    background-color: white;
+    color: #b88709;
+    border: 1px solid #b88709;;
+}
+
+.review{
+    background-color: #083455;
+    margin-top: 7%;
+}
+.review .card{
+    background-color: #083455;
+    color: white;
+}
+.review img{
+    margin-top: 1%;
+    margin-left: 35%;
+    height: 200px;
+    width: 18%;
+    border-radius: 100%;
+}
+
+.review .card-body h5{
+
+    font-family: system-ui;
+    font-size: 28px;
+    
+  
+   
+
+}
+.review .card-body2 .card-text{
+    font-size: 18px;
+  
+    text-align: center;
+    width: 90%;
+}
+.review .card-body2 .card-text2{
+    font-size: 18px;
+margin-left: 12%; 
+color: #bcbdbc;
+
+    
+}
+
+.review .card-body .card-text p{
+    
+font-size: 18px;
+ }
+ .review .card-body{
+    padding-left: 40%;
+ }
+ .checked{
+    color: rgb(230, 192, 22);
+ }
+ .card-text2 {
+  padding-left: 30%;
+ }
+ .offer{
+    margin-left: 3%;
+    margin-right: 3%;
+ }
+.offer .card{
+    margin-left: 3%;
+   
+}
+.offer{
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.offer img{
+    width: 60%;
+    padding-top: 15%;
+    padding-top: 5%;
+    margin-top: 34%;
+    height: 40%;
+
+}
+.offer2 h2{
+    margin-top:5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffd92f;
+    font-size: 19px;
+    text-align: center;
+}
+.offer2 h4{
+    font-family: inherit;
+    text-align: center;
+    font-size: 32px;
+}
+.offer2 hr{
+    width: 9%;
+    margin-left: 46%;
+}
+
+@media(max-width:1200px){
+    .image-card{ 
+        display: none;
+    }
+}
+
+@media(max-width:1000px){
+    .image-card{ 
+        display: none;
+    }
+}
+@media(max-width:950px){
+    .image-card{ 
+        display: none;
+    }
+}
+
+@media(max-width:900px){
+    .image-card{ 
+        display: none;
+    }
+}
+@media(max-width:767px){
+    
+    .love button{
+        width: 70%;
+        margin-right: 5%;
+    }
+    .special-heading{
+    margin-left: 30%;
+    width: 25%;
+    font-size: 35px;
+    }
+    .services .container .busy {
+    width: 300px;
+    margin-left: 20%;
+    }
+    
+    .service-content{
+        flex-direction: column;
+    
+    }
+    .service-content .serv {
+        margin-left: 10%;
+    }
+    .service-content .serv img{
+ margin-left: 12%;
+    }
+    
+    .service-content .txt{
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    .service-content .txt p{
+        
+        margin-left: 10%;
+    }
+    
+    .image-card{ 
+        display: none;
+    }
+    
+.card-group .card img{
+    width: 52%;
+    margin-left: 20%;
+}
+.card-group h5{
+    margin-left: 20%;
+}
+
+
+.review{
+   width: 85%;
+   margin-left: 10%;
+}
+.review .card{
+    background-color: #083455;
+    color: white;
+}
+.review img{
+   
+    margin-left: 20%;
+    height: 200px;
+    width: 45%;
+   
+}
+
+.review .card-body h5{
+margin-right: 40%;
+width: 100%;
+    font-family: system-ui;
+    font-size: 28px;
+height: 100px;
+}
+
+   
+.offer{
+    flex-direction: column;
+    margin-left: 30%;
+    
+    
+}
+
+    }
