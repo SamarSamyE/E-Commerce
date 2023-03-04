@@ -10,29 +10,26 @@
   <body>
     <div class="container">
       <form id="form" class="form" >
+        
         <h1>Login here</h1>
        
         <div class="form-control">
-          <input type="email"  id="email" style="
+          <input type="email" autocomplete="off" id="email" class="email" style="
           padding-bottom: 20p;
          
-      " placeholder="Enter your Email">
+      " placeholder="  Email Id">
          
-          <small>Error Message</small>
+          <small class="emailerr">Invalid username or password</small>
         </div>
         <div class="form-control">
-          <input type="password" id="password" placeholder="Enter your Password" style="margin-top: 10px;">
-          <small>Error Message</small>
+          <input type="password" id="password" class="password" placeholder="   Password" style="margin-top: 10px;">
+          <small class="pasworderr">Invalid username or password</small>
         </div>
-        <diV class="mix">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkRemember">
-          <label class="form-check-label" for="checkRemember">Remember me</label>
-
-      </div>
-        <h2 style="color:#a87816">Don't have an account?<span><a href="signup.html" style="cursor: pointer;color: white;text-decoration: none;">sign up?</a></span> </h2>
-      </diV>
+       
         <button class="sub"><a style="cursor: pointer;text-decoration: none;">Sign in</a></button>
+        <diV class="mix">
+          <h2 style="color:#ffffff;text-decoration: underline;" >Don't have an account?<span><a href="signup.html" style="cursor: pointer;color: white;text-decoration: none; text-decoration: underline;">sign up?</a></span> </h2>
+          </diV>
       </form>
     </div>
 
