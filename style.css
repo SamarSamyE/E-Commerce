@@ -1,19 +1,18 @@
 .carousel-inner{
   width: 100%;
-  
   margin-top: 5%;
   margin-bottom: 2%;
   background-image: url();
- 
  }
+
  .carousel-inner p{
   color: azure;
  }
+
 .carousel-item button{
   border: none;
   font-weight: 500;
   font-size: 23px;
-  /* height: 20%; */
   width: 25%;
   margin-left: 10%; 
   margin-top: 2%;
@@ -22,12 +21,13 @@
   background-color: #f2cf5c;
   height: 50px;
 }
+
 .carousel-item button:hover{
   background-color: #e1b215;
   color: white;
 }
-.carousel-item h5{
 
+.carousel-item h5{
   font-weight: 900;
   font-family: fangsong;
   font-weight: black;
@@ -35,45 +35,49 @@
   margin-left: 8%;
   color: #ffa84e;
 }
-.carousel-item p{
 
+.carousel-item p{
   font-weight: 700;
   margin-top: 2%;
-  /* font-family: cursive; */
   font-size: 22px;
   margin-left: 15%;
   color: #99680b;
   font-family: math;
 }
+
 .carousel-indicators{
   margin-left: 21%;
-
 }
 
- .card{
+
+.card{
   border: none;
   margin-left: 13%;
-  /* max-width: 540px; */
   width: 85%;
  }
+
  .love img{
   width: 70%;
  }
+
  .love{
   margin-top: 4%;
   margin-bottom: 5%;
  }
+
  .love .card-body{
   margin-top: 3%;
   line-height: 2;
   width: 90%;
  }
+
  .love .card-body h5{
   color: black;
   margin-bottom: 8%;
   font-style: italic;
   font-size: 30px;
  }
+
  .love button{
   margin-top: 2%;
   margin-left: 15%;
@@ -85,6 +89,7 @@
   width: 35%;
   border: none;
  }
+
  .love hr{
   width: 50%;
   margin-left: 5%;
@@ -94,7 +99,6 @@
  
 .love button:hover{
   background-color: #dfbf1e;
-
 }
 
 .love .card-text{

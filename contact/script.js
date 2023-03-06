@@ -4,7 +4,7 @@ let email=document.getElementById('email');
 let num=document.getElementById('num');
 let texta=document.getElementById('texta');
 
-
+// return the values to null after send messages
 btn.onclick=function(){
     name.value="";
     email.value="";
@@ -12,7 +12,8 @@ btn.onclick=function(){
     texta.value="";
     alert('Thank you for contacting us')
 }
-let loginstatus = localStorage.getItem("loginstatus");//check 3ml login wla lw ah f hi3ml da
+// For nav Bar after login
+let loginstatus = localStorage.getItem("loginstatus");
 if(loginstatus !== null){
     let fname = localStorage.getItem("fname");
     let lname = localStorage.getItem("lname");
