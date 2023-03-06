@@ -1,0 +1,88 @@
+:root{
+  --maincolor: rgb(245, 198, 70);
+    color: black;
+  --categorycolor:  rgb(250, 188, 16);
+  --background:white;
+  --bgcart:#A3BB98;
+}
+
+.dark-mode{
+  --bgcart:#C0EEF2;
+  --background:rgba(0, 0, 0, 0.808);
+  background-color: var(--background);
+  --maincolor: rgb(8, 144, 179);
+  --categorycolor:  rgb(8, 144, 179);
+   color:white;
+}
+.cart{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width:60%;
+  margin-left:20%;
+  background:var(--bgcart); 
+  border-radius: 20px;
+
+}
+#listOfItems {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 10%;
+  z-index:2;
+  
+}
+
+.item {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  height:80px;
+  justify-content: space-around;
+  font-size: 15px;
+  background-color:var(--background);
+  margin-bottom: 10px;
+}
+
+img {
+  position: absolute;
+  right: 0;
+  margin-right: 25.5%; 
+  width: 6%;
+  height: 80px;
+}
+
+.comp {
+  margin-top: 20px;
+  width:25%
+}
+#id{
+  width:2%
+}
+.close{
+  margin-right: -7%; 
+  width: 7%;
+  background-color:var(--maincolor,black);
+  cursor: pointer;
+  font-size: large;
+  border: none
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:50%;
+  margin: auto;
+  margin-top: 3%;
+  height:50px;
+}
+/* chekout and  shop more*/
+.btn{
+  width:30%;
+  border-radius: 30px;
+  font-size: larger;
+  border:none;
+  background-color: var(--maincolor,black);
+}
+.btn:hover{
+  background-color: var(--maincolor,black);
+}

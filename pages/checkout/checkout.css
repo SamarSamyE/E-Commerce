@@ -1,0 +1,132 @@
+#checkoutText {
+  font-weight: bold;
+}
+
+.form-control.success {
+  border-color: green;
+}
+.form-control.error {
+  border-color: red;
+}
+
+.invalid-feedback {
+  /* display: block; */
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-danger-text);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  margin: 1% 1%;
+}
+.leftside {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  cursor: pointer;
+}
+.rightside {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  cursor: pointer;
+}
+header {
+  margin-right: 100px;
+}
+.navcontent:hover {
+  background-color: rgb(245, 198, 70);
+  padding: 0px 5px;
+}
+#filterList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+#filterList li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(167, 165, 165);
+}
+#filterList li a:hover {
+  color: rgb(245, 198, 70);
+}
+.bottomNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+footer ul li a:hover {
+  color: rgb(245, 198, 70) !important;
+}
+
+.Btn-continue {
+  margin-bottom: 50px;
+}
+
+.Btn-continue #backTo {
+  margin-right: 30px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e09b18;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.Btn-continue #backTo:hover {
+  /* background-color: black; */
+  background-color: #bb8013;
+}
+
+.Btn-continue #continue {
+  margin-right: 30px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e09b18;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.Btn-continue #continue:hover {
+  background-color: #bb8013;
+}
+.totalPrice{
+  margin-left: 10%;
+  margin-top: 2%;
+  list-style: none;
+  font-size: larger;
+  font-weight: 500;
+  color:#e09b18
+
+}

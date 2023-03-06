@@ -66,7 +66,7 @@ const emailvalue = document.getElementById('email').value;
   let storagepassword = localStorage.getItem("password");
 if(emailvalue == storageusernamed && storagepassword == passwordvalue){
   localStorage.setItem("loginstatus",true);//incase eno 3ml login h save l data d 3shan a check hwa logged in wla
-    window.location.href="../index.html"
+    window.location.href="../../index.html"
  }else{
 
   const email = document.querySelector('.email');

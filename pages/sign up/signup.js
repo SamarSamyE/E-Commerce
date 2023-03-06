@@ -16,7 +16,7 @@ let username = localStorage.getItem("fname");
 function checklogin() {
   // checked if user signup befor this or not
   if(username !== null){
-    window.location.href="../index.html"
+    window.location.href="../login/login.html"
   }
 }
 //console.log(username);
@@ -149,6 +149,6 @@ form.addEventListener('submit', function (e) {
     localStorage.setItem("email", emailvalue);
     localStorage.setItem("password", password.value);
     localStorage.setItem("address", addressvalue);
-    window.location.href="../index.html"
+    window.location.href="../login/login.html"
   }
 });

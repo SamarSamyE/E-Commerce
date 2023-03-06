@@ -3,29 +3,47 @@
     margin:0;
     box-sizing: border-box;
 }
-body{
-    background-color: white;
-    color:black;
-}
-.dark-mode{
-    background-color: black;
-    color:white;
+:root{
+    --maincolor: rgb(245, 198, 70);
+    color: black;
+    --categorycolor:  rgb(250, 188, 16);
 }
 
+.dark-mode{
+    background-color: rgba(0, 0, 0, 0.808);
+    --maincolor: rgb(8, 144, 179);
+    --categorycolor:  rgb(8, 144, 179);
+     color:white;
+} 
+#home,#cart{
+    font-size:40px;
+    color:var(--maincolor,black);
+}
+/* #filter{
+   font-size: larger;
+}  */
+#categories{
+    color:var(--categorycolor,black);
+}
+#categories:hover{
+    color:white;
+}
 nav{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 25px;
-    margin: 1% 1%;
-    
+    padding: 2% 1% 1%!important;
+    background-color: #ccc8c8;
 }
+
 .leftside{
     display:flex;
     flex-direction: row;
     gap:30px;
     cursor: pointer; 
 }
+
 .rightside{
     display:flex;
     flex-direction: row;
@@ -33,38 +51,68 @@ nav{
     cursor: pointer; 
    
 }
-header{
-    margin-right:100px
+.bottomnav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3%;
 }
 .navcontent:hover{
- background-color: rgb(245, 198, 70);
+ background-color: var(--maincolor,black);
  padding:0px 5px;
 }
 #filterList{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:20px;
+    margin-left: 4%;
+    cursor: pointer;
 }
 
-#filterList li a{
-    text-decoration: none;
+#filterList span{
+    margin-left: 8px;
+    padding: 10px;
     font-size: 20px;
     font-weight: lighter;
-    color:rgb(167, 165, 165)
+    color:rgb(167, 165, 165);
+    list-style: none;
+    border: 2px solid var(--maincolor,black);
+    border-radius: 25px;
 }
-#filterList li a:hover{
-    color: rgb(245, 198, 70);
-}
-.bottomNav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:2%
+#filterList span:hover{
+    color: var(--maincolor,black);;
 }
 footer ul li a:hover{
     color: rgb(245, 198, 70)!important;
 }
+.fa{
+    padding:10px;
+    font-size: 10px;
+    width:35px;
+    /* text-align: center; */
+    text-decoration: none;
+    border-radius: 60%;
+  }
+  .fa:hover{
+   opacity:0.7;
+  }
+  .fa-facebook{
+    color: #3b5998;
+    
+  }
+  .fa-twitter{
+    color: #55ACEE;
+  }
+  .fa-github{
+    color: #333;
+  }
+  
+  .fa-linkedin{
+    color: #0077B5;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 img{
     width: 300px;
     height: 400px;
